@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <div class="container">
+
+        <h1 class="d-flex justify-content-center ">Mis tareas</h1>
+        <div class="oneContainer"> 
+            <div class="myContainer" id="completedCount"></div>
+            <div class="myContainer2">
+                <button id="addButton" class="myButton">Agregar tarea</button>
+                <div class="otherContainer">
+                    <input type="text" id="searInput" placeholder="Buscar notas..." class="myInput">
+                    <div class="icon"></div>
+                </div>
+            </div>
+            <div class="textaeraContainer">
+                <textarea id="noteInput" style="display: none;" placeholder="Escribe tu nota aqui..." class="myTextArea"></textarea>
+                <button id="saveButton" style="display: none;" class="saveButton">Gruardar nota
+                <div class="hoverEffect">
+                    <div></div>
+                </div>
+                
+                </button>
+            </div>
+            <div class="container">
+                <div class="row taskContainer justify-content-center" id="notesContainer">
+
+                    <!--Aqui se agregaran las notas que agregremos -->
+                </div>
+            </div>
+
+        </div>
+
+        <input type="hidden" id="noteIndex">
+
+    </div>
+ <script src="index.js"></script>
+
+
+</body>
+</html> 
